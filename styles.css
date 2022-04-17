@@ -24,12 +24,13 @@ body{
     
     .items-container a{
     text-decoration: none;        
-    color: rgb(8, 147, 172);
-    margin: 6,5px;
+    color: rgb(166, 204, 255);
+    margin: 1px;
+  
 }
     
 .items-container a:first-child{
-    margin-right: 13px;
+margin-left: 10px;
 }
 
     a:hover{
@@ -40,10 +41,8 @@ body{
     .container { 
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-      width: 87%;
-       background-color:  rgb(166, 204, 255);
-      
+        justify-content: space-evenly;
+      width: 88%;    
         
         }
         
@@ -51,7 +50,7 @@ body{
 
          display: flex;
          flex-direction: row;
-         justify-content: space-between;
+         justify-content: space-evenly;
          align-items: stretch;
               
              } 

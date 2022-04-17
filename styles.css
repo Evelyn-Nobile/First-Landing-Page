@@ -42,9 +42,7 @@ margin-left: 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-      width: 88%; 
-      background-color: #2d9ce0;
-        
+      width: 88%;         
         }
         
         .items-container  {

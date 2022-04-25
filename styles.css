@@ -6,9 +6,8 @@ box-sizing: border-box;
   }
 
 :root{
-    --responsive-background-color:#296e99;
-    --main-font:'Open Sans', sans-serif;
-    --gradiente-fondo: linear-gradient(310deg, #00ffff 0, #30ddff 25%, #429dd4 50%, #396282 75%, #26303c 100%);
+    
+    --gradiente-fondo: linear-gradient(10deg, #f0eeee 0, #f0eeee 50%, #f0eeee 100%);
     --color-contenedor: rgb(166, 204, 255);
     --color-hover: rgb(208, 236, 255);
     --color-links: rgb(8, 147, 172);
@@ -19,16 +18,18 @@ box-sizing: border-box;
 
     
 @media screen and (max-width:992px){
-    body {
+   html {
         background-image: var(--gradiente-fondo);
         height: 100vh;
         background-repeat : no-repeat;
        background-size : contain;
-       font-family: var(--main-font);
+    scroll-behavior: smooth;
+    font-family:'Helvetica',sans-serif;
     }
 
     .items-container li{
-        list-style: none;         
+        list-style: none;      
+        text-transform: uppercase;
     }
     
     .items-container a{
@@ -37,11 +38,14 @@ box-sizing: border-box;
     margin: 1px;
 }
 
-img{
-    display: none;
-    height: 75px;
-    width: 75px;
+.container .logo img{
+    display:  none;    
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
 }
+
 
 a:hover{
     color: var(--color-hover);
@@ -81,15 +85,133 @@ margin: 1px;
 }
  
 .items-container div{
- margin: 10px;
+ margin: 14px; 
 }
 
 .menu-toggle:checked + .items-container{
 display: block;
 }
 
+.titulo-inicio h2{
+    margin: 90px auto;
+color: var(--color-links);    
+   text-align: center;
 }
 
+.contenedor{
+    display: flex;
+    max-width: 100%;
+    height: 80vh;
+    background-image: url(Assets/UNIVERSITARIOS.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+   
+}
+.contenedor .wrap{
+    
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+}
+.contenedor .wrap .box{
+    flex-basis: 50%;
+text-align: center;
+    align-self: center;
+}
+  
+.contenedor .wrap .box a{
+   max-width: 80vw;
+   font-weight: bold;
+   font-size: 1.7rem; 
+    text-decoration: none;
+    color: rgb(72, 105, 105);
+    
+}
+
+
+
+.cards{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;   
+    justify-content: center;
+    align-items: center;
+}
+
+.card-careers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center; 
+    height: 80vh;
+    background-image: url(Assets/carreras.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: right;
+    width: 100%;
+    opacity: 0.7;
+    margin-top: 80px;
+
+    
+}
+
+
+.card-careers a{
+text-decoration: none; 
+font-size: 30px;  
+color:rgb(72,105,105); 
+
+}
+
+a:hover{
+color: var(--color-hover);
+transition: .4s;
+}
+
+
+.card-contact{
+    display: flex;  
+    justify-content: center;  
+    align-items: center; 
+    height: 80vh;
+    background-image: url(Assets/contacto.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    opacity: 0.7;
+    margin-top: 80px;
+    
+}
+
+.card-contact a{
+    text-decoration: none;   
+    font-size: 30px;   
+    color:rgb(72,105,105); 
+    
+            }
+
+a:hover{
+color: var(--color-hover);
+transition: .4
+}             
+
+      
+ 
+footer iframe{
+    width: 100vw;
+    height: 400px;
+}
+
+
+}
+
+
+
+          
  
 
 @media screen and (min-width:992px) {
@@ -100,14 +222,14 @@ display: block;
         box-sizing: inherit;
       }
     
-      body {
+      html {   
         background-image: var(--gradiente-fondo);
-        height: 100vh;
         background-repeat : no-repeat;
        background-size : contain;
-       font-family: var(--main-font);
+       font-family:'Helvetica',sans-serif;
+       scroll-behavior: smooth;
     }
-    
+
     .container { 
         background-color:  var(--color-contenedor);
         display: flex;
@@ -130,6 +252,7 @@ display: block;
     
     .items-container li{
         list-style: none;
+        text-transform: uppercase;
            
     }
     
@@ -151,7 +274,156 @@ display: block;
         width: 75px;
      
     }
+
     .container input{
         display: none;
     }
+
+    .titulo-inicio{
+        display: flex;
+        flex-direction: column;
+        width: 900px;
+        height: 100vh;
+        text-align: inherit;
+        margin-left: 50px;
+
+      }
+   
+   
+    .titulo-inicio h2{
+        margin: 200px auto;
+    color: var(--color-links);    
+       text-align: center;
     }
+  
+
+    .inicio{            
+display: flex;
+justify-content: center;   
+margin-top: 10px;
+       }
+
+          
+ .imagen-inicio img{
+            width: 900px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+            width: 75%;
+            margin: 90px auto;
+          }
+
+
+          .contenedor{
+            display: flex;        
+            max-width: 100%;
+            height: 80vh;
+            background-image: url(Assets/UNIVERSITARIOS.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: left;
+            
+        }
+       
+
+        .contenedor .wrap{
+            max-width: 1000px;
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: left;
+        }
+
+        .contenedor .wrap .box{
+            flex-basis: 50%;
+       text-align: center;
+            align-self: center;
+        }
+        
+        .contenedor  a{
+            font-size: 120px;            
+            text-decoration: none;
+            color: rgb(72, 105, 105);
+            font-family:Arial,Helvetica,sans-serif;        
+            
+        }
+
+        a:hover{
+            color: var(--color-hover);
+              transition: .4s;
+          }
+
+        .cards{
+            display: flex;
+            flex-flow: column wrap;
+            width: 100%;
+            padding: 100px;
+            justify-content: center;
+            align-items: center;
+        }
+     
+        .card-careers{
+            display: flex;        
+            justify-content: center;
+            align-items: center;
+           width: 450px;
+            height: 80vh;
+            background-image: url(Assets/carreras.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right;
+            opacity: 0.7;
+            margin-top: 80px;
+            
+        }
+
+    
+        .card-careers a{
+text-decoration: none; 
+font-size: 60px;  
+color:rgb(72,105,105); 
+
+}
+
+a:hover{
+    color: var(--color-hover);
+      transition: .4s;
+  }
+       
+
+        .card-contact{
+            display: flex;  
+            justify-content: center;  
+            align-items: center;    
+       width: 450px;
+            height: 80vh;
+            background-image: url(Assets/contacto.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right;
+            opacity: 0.7;
+            margin-top: 80px;
+            
+        }
+
+        .card-contact a{
+            text-decoration: none;   
+            font-size: 60px;   
+            color:rgb(72,105,105); 
+            
+                    }
+
+ a:hover{
+    color: var(--color-hover);
+   transition: .4
+   }             
+
+   footer iframe{
+       width: 100vw;
+       height: 400px;
+   }
+    }
+   
+
+  
